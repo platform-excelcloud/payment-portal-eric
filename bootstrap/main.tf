@@ -179,8 +179,8 @@ data "aws_iam_policy_document" "github_actions_permissions" {
     # GetEncryptionConfiguration, etc.) when managing the bucket.
     actions   = ["s3:*"]
     resources = [
-      "arn:aws:s3:::${var.project_name}-lambda-artifacts-*",
-      "arn:aws:s3:::${var.project_name}-lambda-artifacts-*/*",
+      "arn:aws:s3:::${var.project_name}-app-lambda-artifacts-*",
+      "arn:aws:s3:::${var.project_name}-app-lambda-artifacts-*/*",
     ]
   }
 
